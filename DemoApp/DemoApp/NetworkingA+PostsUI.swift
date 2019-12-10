@@ -15,12 +15,12 @@ import NetworkingA
 /// Adapter for the data provider using framework A (URLSession)
 struct PostsDataProviderA: DataProvider {
 
-    private let networkService: NetworkingA.NetworkService
+    private let networkService: NetworkingA
     
     private let userService: UserService
 
     init() {
-        let networkService = NetworkingA.NetworkService()
+        let networkService = NetworkingA()
         
         self.networkService = networkService
         self.userService = UserService(networkService: networkService)

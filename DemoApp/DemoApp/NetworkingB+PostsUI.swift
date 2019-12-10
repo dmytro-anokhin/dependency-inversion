@@ -15,12 +15,12 @@ import NetworkingB
 /// Adapter for the data provider using framework B (Alamofire)
 struct PostsDataProviderB: DataProvider {
 
-    private let networkService: NetworkingB.NetworkService
+    private let networkService: NetworkingB
     
     private let userService: UserService
 
     init() {
-        let networkService = NetworkingB.NetworkService()
+        let networkService = NetworkingB()
         
         self.networkService = networkService
         self.userService = UserService(networkService: networkService)

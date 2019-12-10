@@ -1,5 +1,5 @@
 //
-//  NetworkService.swift
+//  NetworkingA.swift
 //  NetworkingA
 //
 //  Created by Dmytro Anokhin on 10/12/2019.
@@ -9,7 +9,7 @@
 import Foundation
 
 
-public final class NetworkService {
+public final class NetworkingA {
 
     public init() {
     }

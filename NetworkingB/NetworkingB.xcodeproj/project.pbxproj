@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F49D6B49239F355100EB1251 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F49D6B48239F355100EB1251 /* Alamofire */; };
-		F49D6B5E239F3BB400EB1251 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B5D239F3BB400EB1251 /* NetworkService.swift */; };
+		F49D6B5E239F3BB400EB1251 /* NetworkingB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B5D239F3BB400EB1251 /* NetworkingB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F49D6B3C239F350600EB1251 /* NetworkingB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49D6B40239F350600EB1251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F49D6B5D239F3BB400EB1251 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F49D6B5D239F3BB400EB1251 /* NetworkingB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		F49D6B3E239F350600EB1251 /* NetworkingB */ = {
 			isa = PBXGroup;
 			children = (
-				F49D6B5D239F3BB400EB1251 /* NetworkService.swift */,
+				F49D6B5D239F3BB400EB1251 /* NetworkingB.swift */,
 				F49D6B40239F350600EB1251 /* Info.plist */,
 			);
 			path = NetworkingB;
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49D6B5E239F3BB400EB1251 /* NetworkService.swift in Sources */,
+				F49D6B5E239F3BB400EB1251 /* NetworkingB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
