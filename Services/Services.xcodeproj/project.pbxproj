@@ -83,7 +83,7 @@
 			children = (
 				F49EC6B0239F8691001421B1 /* Info.plist */,
 				F49EC6B9239F87A8001421B1 /* UserService.swift */,
-				F4BE2507239FE767000928F3 /* Dependencies */,
+				F4BE2507239FE767000928F3 /* Dependency */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -98,14 +98,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F4BE2507239FE767000928F3 /* Dependencies */ = {
+		F4BE2507239FE767000928F3 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
 				F49EC6C8239F900A001421B1 /* UserNetworkService.swift */,
 				F49EC6D0239F903D001421B1 /* NetworkingA+UserNetworkService.swift */,
 				F49EC6D2239F907C001421B1 /* NetworkingB+UserNetworkService.swift */,
 			);
-			path = Dependencies;
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -76,7 +76,7 @@
 				F49D6B16239F349400EB1251 /* Info.plist */,
 				F49D6B61239F3ECC00EB1251 /* Post+Extensions.swift */,
 				F49D6B63239F4A2B00EB1251 /* Views */,
-				F49D6B64239F4A3A00EB1251 /* Dependencies */,
+				F49D6B64239F4A3A00EB1251 /* Dependency */,
 			);
 			path = PostsUI;
 			sourceTree = "<group>";
@@ -91,12 +91,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F49D6B64239F4A3A00EB1251 /* Dependencies */ = {
+		F49D6B64239F4A3A00EB1251 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
 				F49D6B5B239F383400EB1251 /* DataProvider.swift */,
 			);
-			path = Dependencies;
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		F49EC69D239F8594001421B1 /* Frameworks */ = {
