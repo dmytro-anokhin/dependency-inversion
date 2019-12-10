@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LICENSE">
+      location = "group:Services/Services.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:README.md">
+      location = "group:DataModels/DataModels.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:NetworkServiceB/NetworkServiceB.xcodeproj">
@@ -18,5 +18,11 @@
    </FileRef>
    <FileRef
       location = "group:DemoApp/DemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
    </FileRef>
 </Workspace>

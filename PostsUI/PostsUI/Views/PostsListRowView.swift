@@ -7,34 +7,47 @@
 //
 
 import SwiftUI
+import DataModels
+
 
 struct PostsListRowView: View {
 
-    let post: Post
+    let dataProvider: DataProvider
 
-    init(post: Post) {
+    let post: Post
+    
+    @State var userName: String?
+
+    init(dataProvider: DataProvider, post: Post) {
+        self.dataProvider = dataProvider
         self.post = post
     }
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(post.title)
-                .font(.title)
-                .lineLimit(2)
-            Spacer()
-            Text(post.body).font(.body)
-            Spacer()
-            HStack {
-                Text(String(post.userId))
-                Spacer()
-                Text(String(post.id))
+        if userName == nil {
+            dataProvider.fetchUser(withId: post.userId) { user in
+                self.userName = user?.username ?? "Unknown"
             }
+        }
+        
+        return VStack(alignment: .leading, spacing: 10.0) {
+            Spacer()
+            Text(String(userName ?? "Unknown"))
+                .font(.subheadline)
+                .lineLimit(1)
+            Text(post.title)
+                .font(.headline)
+                .lineLimit(2)
+            Text(post.body)
+                .font(.body)
+                .lineLimit(4)
+            Spacer()
         }
     }
 }
 
 struct PostsListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        PostsListRowView(post: .testPost)
+        PostsListRowView(dataProvider: DataProviderMock(), post: .testPost)
     }
 }

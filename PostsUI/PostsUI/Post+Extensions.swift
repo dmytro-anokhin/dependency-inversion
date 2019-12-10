@@ -1,21 +1,12 @@
 //
-//  Post.swift
+//  Post+Extensions.swift
 //  PostsUI
 //
 //  Created by Dmytro Anokhin on 10/12/2019.
 //  Copyright © 2019 Dmytro Anokhin. All rights reserved.
 //
 
-public struct Post: Codable, Hashable {
-
-    public var userId: Int
-
-    public var id: Int
-
-    public var title: String
-
-    public var body: String
-}
+import DataModels
 
 
 extension Post {

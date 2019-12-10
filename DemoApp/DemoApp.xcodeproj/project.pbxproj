@@ -19,6 +19,12 @@
 		F49D6B51239F357300EB1251 /* NetworkServiceB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49D6B4C239F357300EB1251 /* NetworkServiceB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F49D6B52239F357300EB1251 /* PostsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49D6B4D239F357300EB1251 /* PostsUI.framework */; };
 		F49D6B53239F357300EB1251 /* PostsUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49D6B4D239F357300EB1251 /* PostsUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F49EC6BF239F8938001421B1 /* DataModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6BD239F8938001421B1 /* DataModels.framework */; };
+		F49EC6C0239F8938001421B1 /* DataModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6BD239F8938001421B1 /* DataModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F49EC6C1239F8938001421B1 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6BE239F8938001421B1 /* Services.framework */; };
+		F49EC6C2239F8938001421B1 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6BE239F8938001421B1 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4BE2504239FE3AE000928F3 /* NetworkServiceA+PostsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BE2503239FE3AE000928F3 /* NetworkServiceA+PostsUI.swift */; };
+		F4BE2506239FE3B9000928F3 /* NetworkServiceB+PostsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BE2505239FE3B9000928F3 /* NetworkServiceB+PostsUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +36,8 @@
 			files = (
 				F49D6B51239F357300EB1251 /* NetworkServiceB.framework in Embed Frameworks */,
 				F49D6B53239F357300EB1251 /* PostsUI.framework in Embed Frameworks */,
+				F49EC6C0239F8938001421B1 /* DataModels.framework in Embed Frameworks */,
+				F49EC6C2239F8938001421B1 /* Services.framework in Embed Frameworks */,
 				F49D6B4F239F357300EB1251 /* NetworkServiceA.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -49,6 +57,10 @@
 		F49D6B4B239F357300EB1251 /* NetworkServiceA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkServiceA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49D6B4C239F357300EB1251 /* NetworkServiceB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkServiceB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49D6B4D239F357300EB1251 /* PostsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PostsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49EC6BD239F8938001421B1 /* DataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49EC6BE239F8938001421B1 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BE2503239FE3AE000928F3 /* NetworkServiceA+PostsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkServiceA+PostsUI.swift"; sourceTree = "<group>"; };
+		F4BE2505239FE3B9000928F3 /* NetworkServiceB+PostsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkServiceB+PostsUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 			files = (
 				F49D6B50239F357300EB1251 /* NetworkServiceB.framework in Frameworks */,
 				F49D6B52239F357300EB1251 /* PostsUI.framework in Frameworks */,
+				F49EC6BF239F8938001421B1 /* DataModels.framework in Frameworks */,
+				F49EC6C1239F8938001421B1 /* Services.framework in Frameworks */,
 				F49D6B4E239F357300EB1251 /* NetworkServiceA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +102,8 @@
 				F49D6AF4239F346700EB1251 /* AppDelegate.swift */,
 				F49D6AF6239F346700EB1251 /* SceneDelegate.swift */,
 				F49D6AF8239F346700EB1251 /* ContentView.swift */,
+				F4BE2503239FE3AE000928F3 /* NetworkServiceA+PostsUI.swift */,
+				F4BE2505239FE3B9000928F3 /* NetworkServiceB+PostsUI.swift */,
 				F49D6AFA239F346900EB1251 /* Assets.xcassets */,
 				F49D6AFF239F346900EB1251 /* LaunchScreen.storyboard */,
 				F49D6B02239F346900EB1251 /* Info.plist */,
@@ -107,6 +123,8 @@
 		F49D6B4A239F357300EB1251 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F49EC6BD239F8938001421B1 /* DataModels.framework */,
+				F49EC6BE239F8938001421B1 /* Services.framework */,
 				F49D6B4B239F357300EB1251 /* NetworkServiceA.framework */,
 				F49D6B4C239F357300EB1251 /* NetworkServiceB.framework */,
 				F49D6B4D239F357300EB1251 /* PostsUI.framework */,
@@ -186,9 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4BE2506239FE3B9000928F3 /* NetworkServiceB+PostsUI.swift in Sources */,
 				F49D6AF5239F346700EB1251 /* AppDelegate.swift in Sources */,
 				F49D6AF7239F346700EB1251 /* SceneDelegate.swift in Sources */,
 				F49D6AF9239F346700EB1251 /* ContentView.swift in Sources */,
+				F4BE2504239FE3AE000928F3 /* NetworkServiceA+PostsUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +349,7 @@
 				DEVELOPMENT_TEAM = UEQ8YHF529;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +370,7 @@
 				DEVELOPMENT_TEAM = UEQ8YHF529;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

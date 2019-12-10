@@ -7,154 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F49D6B56239F35FC00EB1251 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B55239F35FC00EB1251 /* PostsListView.swift */; };
-		F49D6B58239F361400EB1251 /* PostsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B57239F361400EB1251 /* PostsListRowView.swift */; };
-		F49D6B5A239F365B00EB1251 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B59239F365B00EB1251 /* PostView.swift */; };
-		F49D6B5C239F383400EB1251 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B5B239F383400EB1251 /* DataProvider.swift */; };
-		F49D6B62239F3ECC00EB1251 /* Post+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B61239F3ECC00EB1251 /* Post+Extensions.swift */; };
-		F49EC69F239F8594001421B1 /* DataModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC69E239F8594001421B1 /* DataModels.framework */; };
-		F49EC6A0239F8594001421B1 /* DataModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC69E239F8594001421B1 /* DataModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F49EC695239F853E001421B1 /* DataModels.h in Headers */ = {isa = PBXBuildFile; fileRef = F49EC693239F853E001421B1 /* DataModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F49EC69C239F8565001421B1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC69B239F8565001421B1 /* Post.swift */; };
+		F49EC6B8239F8742001421B1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC6B7239F8742001421B1 /* User.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		F49EC6A1239F8594001421B1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F49EC6A0239F8594001421B1 /* DataModels.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		F49D6B12239F349400EB1251 /* PostsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F49D6B16239F349400EB1251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F49D6B55239F35FC00EB1251 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
-		F49D6B57239F361400EB1251 /* PostsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListRowView.swift; sourceTree = "<group>"; };
-		F49D6B59239F365B00EB1251 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
-		F49D6B5B239F383400EB1251 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
-		F49D6B61239F3ECC00EB1251 /* Post+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Extensions.swift"; sourceTree = "<group>"; };
-		F49EC69E239F8594001421B1 /* DataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49EC690239F853E001421B1 /* DataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49EC693239F853E001421B1 /* DataModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
+		F49EC694239F853E001421B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49EC69B239F8565001421B1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F49EC6B7239F8742001421B1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F49D6B0F239F349400EB1251 /* Frameworks */ = {
+		F49EC68D239F853E001421B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49EC69F239F8594001421B1 /* DataModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F49D6B08239F349400EB1251 = {
+		F49EC686239F853E001421B1 = {
 			isa = PBXGroup;
 			children = (
-				F49D6B14239F349400EB1251 /* PostsUI */,
-				F49D6B13239F349400EB1251 /* Products */,
-				F49EC69D239F8594001421B1 /* Frameworks */,
+				F49EC692239F853E001421B1 /* DataModels */,
+				F49EC691239F853E001421B1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F49D6B13239F349400EB1251 /* Products */ = {
+		F49EC691239F853E001421B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F49D6B12239F349400EB1251 /* PostsUI.framework */,
+				F49EC690239F853E001421B1 /* DataModels.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F49D6B14239F349400EB1251 /* PostsUI */ = {
+		F49EC692239F853E001421B1 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				F49D6B16239F349400EB1251 /* Info.plist */,
-				F49D6B61239F3ECC00EB1251 /* Post+Extensions.swift */,
-				F49D6B63239F4A2B00EB1251 /* Views */,
-				F49D6B64239F4A3A00EB1251 /* Dependencies */,
+				F49EC693239F853E001421B1 /* DataModels.h */,
+				F49EC694239F853E001421B1 /* Info.plist */,
+				F49EC69B239F8565001421B1 /* Post.swift */,
+				F49EC6B7239F8742001421B1 /* User.swift */,
 			);
-			path = PostsUI;
-			sourceTree = "<group>";
-		};
-		F49D6B63239F4A2B00EB1251 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F49D6B55239F35FC00EB1251 /* PostsListView.swift */,
-				F49D6B57239F361400EB1251 /* PostsListRowView.swift */,
-				F49D6B59239F365B00EB1251 /* PostView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F49D6B64239F4A3A00EB1251 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				F49D6B5B239F383400EB1251 /* DataProvider.swift */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		F49EC69D239F8594001421B1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F49EC69E239F8594001421B1 /* DataModels.framework */,
-			);
-			name = Frameworks;
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F49D6B0D239F349400EB1251 /* Headers */ = {
+		F49EC68B239F853E001421B1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49EC695239F853E001421B1 /* DataModels.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F49D6B11239F349400EB1251 /* PostsUI */ = {
+		F49EC68F239F853E001421B1 /* DataModels */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F49D6B1A239F349400EB1251 /* Build configuration list for PBXNativeTarget "PostsUI" */;
+			buildConfigurationList = F49EC698239F853E001421B1 /* Build configuration list for PBXNativeTarget "DataModels" */;
 			buildPhases = (
-				F49D6B0D239F349400EB1251 /* Headers */,
-				F49D6B0E239F349400EB1251 /* Sources */,
-				F49D6B0F239F349400EB1251 /* Frameworks */,
-				F49D6B10239F349400EB1251 /* Resources */,
-				F49EC6A1239F8594001421B1 /* Embed Frameworks */,
+				F49EC68B239F853E001421B1 /* Headers */,
+				F49EC68C239F853E001421B1 /* Sources */,
+				F49EC68D239F853E001421B1 /* Frameworks */,
+				F49EC68E239F853E001421B1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PostsUI;
-			productName = PostsUI;
-			productReference = F49D6B12239F349400EB1251 /* PostsUI.framework */;
+			name = DataModels;
+			productName = DataModels;
+			productReference = F49EC690239F853E001421B1 /* DataModels.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F49D6B09239F349400EB1251 /* Project object */ = {
+		F49EC687239F853E001421B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Dmytro Anokhin";
 				TargetAttributes = {
-					F49D6B11239F349400EB1251 = {
-						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
+					F49EC68F239F853E001421B1 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
-			buildConfigurationList = F49D6B0C239F349400EB1251 /* Build configuration list for PBXProject "PostsUI" */;
+			buildConfigurationList = F49EC68A239F853E001421B1 /* Build configuration list for PBXProject "DataModels" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -162,18 +113,18 @@
 				en,
 				Base,
 			);
-			mainGroup = F49D6B08239F349400EB1251;
-			productRefGroup = F49D6B13239F349400EB1251 /* Products */;
+			mainGroup = F49EC686239F853E001421B1;
+			productRefGroup = F49EC691239F853E001421B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F49D6B11239F349400EB1251 /* PostsUI */,
+				F49EC68F239F853E001421B1 /* DataModels */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F49D6B10239F349400EB1251 /* Resources */ = {
+		F49EC68E239F853E001421B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -183,22 +134,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F49D6B0E239F349400EB1251 /* Sources */ = {
+		F49EC68C239F853E001421B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49D6B56239F35FC00EB1251 /* PostsListView.swift in Sources */,
-				F49D6B5A239F365B00EB1251 /* PostView.swift in Sources */,
-				F49D6B5C239F383400EB1251 /* DataProvider.swift in Sources */,
-				F49D6B58239F361400EB1251 /* PostsListRowView.swift in Sources */,
-				F49D6B62239F3ECC00EB1251 /* Post+Extensions.swift in Sources */,
+				F49EC6B8239F8742001421B1 /* User.swift in Sources */,
+				F49EC69C239F8565001421B1 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F49D6B18239F349400EB1251 /* Debug */ = {
+		F49EC696239F853E001421B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -261,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		F49D6B19239F349400EB1251 /* Release */ = {
+		F49EC697239F853E001421B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -318,25 +266,24 @@
 			};
 			name = Release;
 		};
-		F49D6B1B239F349400EB1251 /* Debug */ = {
+		F49EC699239F853E001421B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UEQ8YHF529;
+				DEVELOPMENT_TEAM = 8U3997U6YH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PostsUI/Info.plist;
+				INFOPLIST_FILE = DataModels/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.PostsUI;
+				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.DataModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -345,25 +292,24 @@
 			};
 			name = Debug;
 		};
-		F49D6B1C239F349400EB1251 /* Release */ = {
+		F49EC69A239F853E001421B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UEQ8YHF529;
+				DEVELOPMENT_TEAM = 8U3997U6YH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PostsUI/Info.plist;
+				INFOPLIST_FILE = DataModels/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.PostsUI;
+				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.DataModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -374,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F49D6B0C239F349400EB1251 /* Build configuration list for PBXProject "PostsUI" */ = {
+		F49EC68A239F853E001421B1 /* Build configuration list for PBXProject "DataModels" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F49D6B18239F349400EB1251 /* Debug */,
-				F49D6B19239F349400EB1251 /* Release */,
+				F49EC696239F853E001421B1 /* Debug */,
+				F49EC697239F853E001421B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F49D6B1A239F349400EB1251 /* Build configuration list for PBXNativeTarget "PostsUI" */ = {
+		F49EC698239F853E001421B1 /* Build configuration list for PBXNativeTarget "DataModels" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F49D6B1B239F349400EB1251 /* Debug */,
-				F49D6B1C239F349400EB1251 /* Release */,
+				F49EC699239F853E001421B1 /* Debug */,
+				F49EC69A239F853E001421B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F49D6B09239F349400EB1251 /* Project object */;
+	rootObject = F49EC687239F853E001421B1 /* Project object */;
 }

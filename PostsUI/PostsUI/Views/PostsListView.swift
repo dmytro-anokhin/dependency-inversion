@@ -7,25 +7,30 @@
 //
 
 import SwiftUI
+import DataModels
+
 
 struct PostsListView: View {
 
+    let dataProvider: DataProvider
+
     let posts: [Post]
 
-    init(posts: [Post]) {
+    init(dataProvider: DataProvider, posts: [Post]) {
+        self.dataProvider = dataProvider
         self.posts = posts
     }
 
     var body: some View {
         List(posts, id: \.self) {
-            PostsListRowView(post: $0)
+            PostsListRowView(dataProvider: self.dataProvider, post: $0)
         }
     }
 }
 
 struct PostsListView_Previews: PreviewProvider {
     static var previews: some View {
-        PostsListView(posts: [
+        PostsListView(dataProvider: DataProviderMock(), posts: [
             .testPost
         ])
     }

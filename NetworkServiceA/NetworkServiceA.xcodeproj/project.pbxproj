@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F49D6B2C239F34EF00EB1251 /* NetworkServiceA.h in Headers */ = {isa = PBXBuildFile; fileRef = F49D6B2A239F34EF00EB1251 /* NetworkServiceA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F49D6B60239F3C8C00EB1251 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B5F239F3C8C00EB1251 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F49D6B27239F34EF00EB1251 /* NetworkServiceA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkServiceA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F49D6B2A239F34EF00EB1251 /* NetworkServiceA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkServiceA.h; sourceTree = "<group>"; };
 		F49D6B2B239F34EF00EB1251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49D6B5F239F3C8C00EB1251 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +46,6 @@
 		F49D6B29239F34EF00EB1251 /* NetworkServiceA */ = {
 			isa = PBXGroup;
 			children = (
-				F49D6B2A239F34EF00EB1251 /* NetworkServiceA.h */,
 				F49D6B5F239F3C8C00EB1251 /* NetworkService.swift */,
 				F49D6B2B239F34EF00EB1251 /* Info.plist */,
 			);
@@ -62,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49D6B2C239F34EF00EB1251 /* NetworkServiceA.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +270,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NetworkServiceA/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +297,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NetworkServiceA/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

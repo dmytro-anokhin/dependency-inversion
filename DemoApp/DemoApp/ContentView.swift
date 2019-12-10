@@ -8,41 +8,17 @@
 
 import SwiftUI
 import PostsUI
-import NetworkServiceA
-import NetworkServiceB
-
-
-/// Adapter for the network service using framework A (URLSession)
-struct PostsNetworkServiceA: PostsNetworkServiceInterface {
-
-    private let networkService = NetworkServiceA.NetworkService()
-
-    func loadPosts(withURL url: URL, completion: @escaping (Result<[Post], Error>) -> Void) {
-        networkService.loadJSON(withURL: url, type: [Post].self, completion: completion)
-    }
-}
-
-
-/// Adapter for the network service using framework B (Alamofire)
-struct PostsNetworkServiceB: PostsNetworkServiceInterface {
-
-    private let networkService = NetworkServiceB.NetworkService()
-
-    func loadPosts(withURL url: URL, completion: @escaping (Result<[Post], Error>) -> Void) {
-        networkService.load(url, type: [Post].self, completion: completion)
-    }
-}
 
 
 struct ContentView: View {
 
-    private let networkServiceA = PostsNetworkServiceA()
-    private let networkServiceB = PostsNetworkServiceB()
+    private let postsDataProviderA = PostsDataProviderA()
+    private let postsDataProviderB = PostsDataProviderB()
 
     var body: some View {
         TabView {
             NavigationView {
-                PostView(networkService: networkServiceA)
+                PostView(dataProvider: postsDataProviderA)
                     .navigationBarTitle("Posts", displayMode: .inline)
             }
             .tabItem {
@@ -51,7 +27,7 @@ struct ContentView: View {
             }
 
             NavigationView {
-                PostView(networkService: networkServiceB)
+                PostView(dataProvider: postsDataProviderB)
                     .navigationBarTitle("Posts", displayMode: .inline)
             }
             .tabItem {

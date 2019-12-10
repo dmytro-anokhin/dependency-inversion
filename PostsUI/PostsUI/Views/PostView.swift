@@ -7,43 +7,42 @@
 //
 
 import SwiftUI
+import DataModels
+
 
 public struct PostView: View {
 
-    private let networkService: PostsNetworkServiceInterface
+    let dataProvider: DataProvider
 
-    public init(networkService: PostsNetworkServiceInterface) {
-        self.networkService = networkService
+    public init(dataProvider: DataProvider) {
+        self.dataProvider = dataProvider
     }
 
-    @State var posts: [Post] = []
-
-    @State var loaded = false
+    @State var posts: [Post]?
 
     public var body: some View {
-        if !loaded {
+        if posts == nil {
             let url = URL(string: "https://jsonplaceholder.typicode.com/posts")!
 
-            networkService.loadPosts(withURL: url) { result in
-                self.loaded = true
-
+            dataProvider.fetchPosts(withURL: url) { result in
                 switch result {
                     case .success(let posts):
                         self.posts = posts
 
                     case .failure(let error):
                         print("Failed to load posts with error: \(error)")
+                        self.posts = []
                 }
             }
         }
 
-        return PostsListView(posts: posts)
+        return PostsListView(dataProvider: dataProvider, posts: posts ?? [])
     }
 }
 
 struct PostView_Previews: PreviewProvider {
 
     static var previews: some View {
-        PostView(networkService: PostsNetworkServiceMock())
+        PostView(dataProvider: DataProviderMock())
     }
 }
