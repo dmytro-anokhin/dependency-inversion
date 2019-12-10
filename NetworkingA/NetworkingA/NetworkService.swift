@@ -1,6 +1,6 @@
 //
 //  NetworkService.swift
-//  NetworkServiceA
+//  NetworkingA
 //
 //  Created by Dmytro Anokhin on 10/12/2019.
 //  Copyright © 2019 Dmytro Anokhin. All rights reserved.
@@ -26,7 +26,7 @@ public final class NetworkService {
                 }
             }
             else {
-                completion(.failure(error ?? NSError(domain: "NetworkServiceA", code: 0, userInfo: nil)))
+                completion(.failure(error ?? NSError(domain: "NetworkingA", code: 0, userInfo: nil)))
             }
         }
         .resume()

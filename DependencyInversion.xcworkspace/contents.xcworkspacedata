@@ -8,10 +8,10 @@
       location = "group:DataModels/DataModels.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:NetworkServiceB/NetworkServiceB.xcodeproj">
+      location = "group:NetworkingB/NetworkingB.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:NetworkServiceA/NetworkServiceA.xcodeproj">
+      location = "group:NetworkingA/NetworkingA.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:PostsUI/PostsUI.xcodeproj">

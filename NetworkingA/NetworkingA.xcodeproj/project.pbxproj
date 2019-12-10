@@ -3,61 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F49D6B49239F355100EB1251 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F49D6B48239F355100EB1251 /* Alamofire */; };
-		F49D6B5E239F3BB400EB1251 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B5D239F3BB400EB1251 /* NetworkService.swift */; };
+		F49D6B60239F3C8C00EB1251 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D6B5F239F3C8C00EB1251 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F49D6B3C239F350600EB1251 /* NetworkServiceB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkServiceB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F49D6B40239F350600EB1251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F49D6B5D239F3BB400EB1251 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F49D6B27239F34EF00EB1251 /* NetworkingA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49D6B2B239F34EF00EB1251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49D6B5F239F3C8C00EB1251 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F49D6B39239F350600EB1251 /* Frameworks */ = {
+		F49D6B24239F34EF00EB1251 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49D6B49239F355100EB1251 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F49D6B32239F350600EB1251 = {
+		F49D6B1D239F34EF00EB1251 = {
 			isa = PBXGroup;
 			children = (
-				F49D6B3E239F350600EB1251 /* NetworkServiceB */,
-				F49D6B3D239F350600EB1251 /* Products */,
+				F49D6B29239F34EF00EB1251 /* NetworkingA */,
+				F49D6B28239F34EF00EB1251 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F49D6B3D239F350600EB1251 /* Products */ = {
+		F49D6B28239F34EF00EB1251 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F49D6B3C239F350600EB1251 /* NetworkServiceB.framework */,
+				F49D6B27239F34EF00EB1251 /* NetworkingA.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F49D6B3E239F350600EB1251 /* NetworkServiceB */ = {
+		F49D6B29239F34EF00EB1251 /* NetworkingA */ = {
 			isa = PBXGroup;
 			children = (
-				F49D6B5D239F3BB400EB1251 /* NetworkService.swift */,
-				F49D6B40239F350600EB1251 /* Info.plist */,
+				F49D6B5F239F3C8C00EB1251 /* NetworkService.swift */,
+				F49D6B2B239F34EF00EB1251 /* Info.plist */,
 			);
-			path = NetworkServiceB;
+			path = NetworkingA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F49D6B37239F350600EB1251 /* Headers */ = {
+		F49D6B22239F34EF00EB1251 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,43 +65,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F49D6B3B239F350600EB1251 /* NetworkServiceB */ = {
+		F49D6B26239F34EF00EB1251 /* NetworkingA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F49D6B44239F350600EB1251 /* Build configuration list for PBXNativeTarget "NetworkServiceB" */;
+			buildConfigurationList = F49D6B2F239F34EF00EB1251 /* Build configuration list for PBXNativeTarget "NetworkingA" */;
 			buildPhases = (
-				F49D6B37239F350600EB1251 /* Headers */,
-				F49D6B38239F350600EB1251 /* Sources */,
-				F49D6B39239F350600EB1251 /* Frameworks */,
-				F49D6B3A239F350600EB1251 /* Resources */,
+				F49D6B22239F34EF00EB1251 /* Headers */,
+				F49D6B23239F34EF00EB1251 /* Sources */,
+				F49D6B24239F34EF00EB1251 /* Frameworks */,
+				F49D6B25239F34EF00EB1251 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NetworkServiceB;
-			packageProductDependencies = (
-				F49D6B48239F355100EB1251 /* Alamofire */,
-			);
-			productName = NetworkServiceB;
-			productReference = F49D6B3C239F350600EB1251 /* NetworkServiceB.framework */;
+			name = NetworkingA;
+			productName = NetworkingA;
+			productReference = F49D6B27239F34EF00EB1251 /* NetworkingA.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F49D6B33239F350600EB1251 /* Project object */ = {
+		F49D6B1E239F34EF00EB1251 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Dmytro Anokhin";
 				TargetAttributes = {
-					F49D6B3B239F350600EB1251 = {
+					F49D6B26239F34EF00EB1251 = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
 					};
 				};
 			};
-			buildConfigurationList = F49D6B36239F350600EB1251 /* Build configuration list for PBXProject "NetworkServiceB" */;
+			buildConfigurationList = F49D6B21239F34EF00EB1251 /* Build configuration list for PBXProject "NetworkingA" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,21 +106,18 @@
 				en,
 				Base,
 			);
-			mainGroup = F49D6B32239F350600EB1251;
-			packageReferences = (
-				F49D6B47239F355100EB1251 /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
-			productRefGroup = F49D6B3D239F350600EB1251 /* Products */;
+			mainGroup = F49D6B1D239F34EF00EB1251;
+			productRefGroup = F49D6B28239F34EF00EB1251 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F49D6B3B239F350600EB1251 /* NetworkServiceB */,
+				F49D6B26239F34EF00EB1251 /* NetworkingA */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F49D6B3A239F350600EB1251 /* Resources */ = {
+		F49D6B25239F34EF00EB1251 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,18 +127,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F49D6B38239F350600EB1251 /* Sources */ = {
+		F49D6B23239F34EF00EB1251 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49D6B5E239F3BB400EB1251 /* NetworkService.swift in Sources */,
+				F49D6B60239F3C8C00EB1251 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F49D6B42239F350600EB1251 /* Debug */ = {
+		F49D6B2D239F34EF00EB1251 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +201,7 @@
 			};
 			name = Debug;
 		};
-		F49D6B43239F350600EB1251 /* Release */ = {
+		F49D6B2E239F34EF00EB1251 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +258,7 @@
 			};
 			name = Release;
 		};
-		F49D6B45239F350600EB1251 /* Debug */ = {
+		F49D6B30239F34EF00EB1251 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -276,7 +268,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NetworkServiceB/Info.plist;
+				INFOPLIST_FILE = NetworkingA/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,7 +276,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.NetworkServiceB;
+				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.NetworkingA;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -293,7 +285,7 @@
 			};
 			name = Debug;
 		};
-		F49D6B46239F350600EB1251 /* Release */ = {
+		F49D6B31239F34EF00EB1251 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -303,7 +295,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NetworkServiceB/Info.plist;
+				INFOPLIST_FILE = NetworkingA/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,7 +303,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.NetworkServiceB;
+				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.NetworkingA;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,44 +314,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F49D6B36239F350600EB1251 /* Build configuration list for PBXProject "NetworkServiceB" */ = {
+		F49D6B21239F34EF00EB1251 /* Build configuration list for PBXProject "NetworkingA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F49D6B42239F350600EB1251 /* Debug */,
-				F49D6B43239F350600EB1251 /* Release */,
+				F49D6B2D239F34EF00EB1251 /* Debug */,
+				F49D6B2E239F34EF00EB1251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F49D6B44239F350600EB1251 /* Build configuration list for PBXNativeTarget "NetworkServiceB" */ = {
+		F49D6B2F239F34EF00EB1251 /* Build configuration list for PBXNativeTarget "NetworkingA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F49D6B45239F350600EB1251 /* Debug */,
-				F49D6B46239F350600EB1251 /* Release */,
+				F49D6B30239F34EF00EB1251 /* Debug */,
+				F49D6B31239F34EF00EB1251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F49D6B47239F355100EB1251 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = "5.0.0-rc.3";
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F49D6B48239F355100EB1251 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F49D6B47239F355100EB1251 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = F49D6B33239F350600EB1251 /* Project object */;
+	rootObject = F49D6B1E239F34EF00EB1251 /* Project object */;
 }

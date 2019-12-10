@@ -1,5 +1,5 @@
 //
-//  NetworkServiceB+PostsUI.swift
+//  NetworkingA+PostsUI.swift
 //  DemoApp
 //
 //  Created by Dmytro Anokhin on 10/12/2019.
@@ -9,25 +9,25 @@
 import PostsUI
 import DataModels
 import Services
-import NetworkServiceB
+import NetworkingA
 
 
-/// Adapter for the data provider using framework B (Alamofire)
-struct PostsDataProviderB: DataProvider {
+/// Adapter for the data provider using framework A (URLSession)
+struct PostsDataProviderA: DataProvider {
 
-    private let networkService: NetworkServiceB.NetworkService
+    private let networkService: NetworkingA.NetworkService
     
     private let userService: UserService
 
     init() {
-        let networkService = NetworkServiceB.NetworkService()
+        let networkService = NetworkingA.NetworkService()
         
         self.networkService = networkService
         self.userService = UserService(networkService: networkService)
     }
 
     func fetchPosts(withURL url: URL, completion: @escaping (Result<[Post], Error>) -> Void) {
-        networkService.load(url, type: [Post].self, completion: completion)
+        networkService.loadJSON(withURL: url, type: [Post].self, completion: completion)
     }
     
     func fetchUser(withId id: Int, completion: @escaping (User?) -> Void) {

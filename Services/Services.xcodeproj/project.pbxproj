@@ -11,12 +11,12 @@
 		F49EC6C5239F8960001421B1 /* DataModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6C4239F8960001421B1 /* DataModels.framework */; };
 		F49EC6C6239F8960001421B1 /* DataModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6C4239F8960001421B1 /* DataModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F49EC6C9239F900A001421B1 /* UserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC6C8239F900A001421B1 /* UserNetworkService.swift */; };
-		F49EC6CC239F901E001421B1 /* NetworkServiceA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6CA239F901E001421B1 /* NetworkServiceA.framework */; };
-		F49EC6CD239F901E001421B1 /* NetworkServiceA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6CA239F901E001421B1 /* NetworkServiceA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F49EC6CE239F901E001421B1 /* NetworkServiceB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6CB239F901E001421B1 /* NetworkServiceB.framework */; };
-		F49EC6CF239F901E001421B1 /* NetworkServiceB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6CB239F901E001421B1 /* NetworkServiceB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F49EC6D1239F903D001421B1 /* NetworkServiceA+UserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC6D0239F903D001421B1 /* NetworkServiceA+UserNetworkService.swift */; };
-		F49EC6D3239F907C001421B1 /* NetworkServiceB+UserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC6D2239F907C001421B1 /* NetworkServiceB+UserNetworkService.swift */; };
+		F49EC6CC239F901E001421B1 /* NetworkingA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6CA239F901E001421B1 /* NetworkingA.framework */; };
+		F49EC6CD239F901E001421B1 /* NetworkingA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6CA239F901E001421B1 /* NetworkingA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F49EC6CE239F901E001421B1 /* NetworkingB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6CB239F901E001421B1 /* NetworkingB.framework */; };
+		F49EC6CF239F901E001421B1 /* NetworkingB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49EC6CB239F901E001421B1 /* NetworkingB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F49EC6D1239F903D001421B1 /* NetworkingA+UserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC6D0239F903D001421B1 /* NetworkingA+UserNetworkService.swift */; };
+		F49EC6D3239F907C001421B1 /* NetworkingB+UserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC6D2239F907C001421B1 /* NetworkingB+UserNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +27,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F49EC6C6239F8960001421B1 /* DataModels.framework in Embed Frameworks */,
-				F49EC6CF239F901E001421B1 /* NetworkServiceB.framework in Embed Frameworks */,
-				F49EC6CD239F901E001421B1 /* NetworkServiceA.framework in Embed Frameworks */,
+				F49EC6CF239F901E001421B1 /* NetworkingB.framework in Embed Frameworks */,
+				F49EC6CD239F901E001421B1 /* NetworkingA.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,10 +41,10 @@
 		F49EC6B9239F87A8001421B1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		F49EC6C4239F8960001421B1 /* DataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49EC6C8239F900A001421B1 /* UserNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkService.swift; sourceTree = "<group>"; };
-		F49EC6CA239F901E001421B1 /* NetworkServiceA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkServiceA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F49EC6CB239F901E001421B1 /* NetworkServiceB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkServiceB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F49EC6D0239F903D001421B1 /* NetworkServiceA+UserNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkServiceA+UserNetworkService.swift"; sourceTree = "<group>"; };
-		F49EC6D2239F907C001421B1 /* NetworkServiceB+UserNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkServiceB+UserNetworkService.swift"; sourceTree = "<group>"; };
+		F49EC6CA239F901E001421B1 /* NetworkingA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkingA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49EC6CB239F901E001421B1 /* NetworkingB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkingB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49EC6D0239F903D001421B1 /* NetworkingA+UserNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingA+UserNetworkService.swift"; sourceTree = "<group>"; };
+		F49EC6D2239F907C001421B1 /* NetworkingB+UserNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingB+UserNetworkService.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49EC6C5239F8960001421B1 /* DataModels.framework in Frameworks */,
-				F49EC6CE239F901E001421B1 /* NetworkServiceB.framework in Frameworks */,
-				F49EC6CC239F901E001421B1 /* NetworkServiceA.framework in Frameworks */,
+				F49EC6CE239F901E001421B1 /* NetworkingB.framework in Frameworks */,
+				F49EC6CC239F901E001421B1 /* NetworkingA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +91,8 @@
 		F49EC6C3239F8960001421B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F49EC6CA239F901E001421B1 /* NetworkServiceA.framework */,
-				F49EC6CB239F901E001421B1 /* NetworkServiceB.framework */,
+				F49EC6CA239F901E001421B1 /* NetworkingA.framework */,
+				F49EC6CB239F901E001421B1 /* NetworkingB.framework */,
 				F49EC6C4239F8960001421B1 /* DataModels.framework */,
 			);
 			name = Frameworks;
@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				F49EC6C8239F900A001421B1 /* UserNetworkService.swift */,
-				F49EC6D0239F903D001421B1 /* NetworkServiceA+UserNetworkService.swift */,
-				F49EC6D2239F907C001421B1 /* NetworkServiceB+UserNetworkService.swift */,
+				F49EC6D0239F903D001421B1 /* NetworkingA+UserNetworkService.swift */,
+				F49EC6D2239F907C001421B1 /* NetworkingB+UserNetworkService.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -189,8 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49EC6BA239F87A8001421B1 /* UserService.swift in Sources */,
-				F49EC6D3239F907C001421B1 /* NetworkServiceB+UserNetworkService.swift in Sources */,
-				F49EC6D1239F903D001421B1 /* NetworkServiceA+UserNetworkService.swift in Sources */,
+				F49EC6D3239F907C001421B1 /* NetworkingB+UserNetworkService.swift in Sources */,
+				F49EC6D1239F903D001421B1 /* NetworkingA+UserNetworkService.swift in Sources */,
 				F49EC6C9239F900A001421B1 /* UserNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
